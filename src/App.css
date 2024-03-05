@@ -1,38 +1,87 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+}
+.section1 {
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  text-align: center;
+  font-family: "Nerko One", cursive;
+}
+
+.main {
+  padding: 150px 0px;
+  color: #fff;
+}
+.batjockBlock{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  padding-top: 20px;
+  font-size: 64px;
+  -webkit-text-stroke: 1px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.socialsBlock {
+  margin-top:50px;
+}
+
+.button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 36px;
+  font-family: "Nerko One", cursive;
+  color:#fff;
+  background-color: #DF2727;
+  border: 0;
+  border-radius: 5px;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the floating distance as needed */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 420px) {
+  .main{
+    padding: 100px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .batjockBlock{
+    display: block;
+    text-align: center;
+  }
+  .lilwayne{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section1 {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .main{
+    padding: 100px 0px 0px 0px;
+  }
+  .lilwayne {
+    max-width: 520px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .main{
+    padding: 150px 0px;
+  }
+  .lilwayne {
+    max-width: 720px;
+    margin-top: 20px;
   }
 }
